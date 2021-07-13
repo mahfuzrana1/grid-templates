@@ -1,0 +1,895 @@
+@font-face {
+	font-family: "EinsteigenBitte";
+	font-weight: 300;
+	font-style: normal;
+	src:
+			url("https://www.einsteigenbitte.de/files/fonts/EinsteigenBitte-Regular.ttf") format("truetype"), 
+			url("https://www.einsteigenbitte.de/files/fonts/EinsteigenBitte-Regular.woff") format("woff"),
+        	url("https://www.einsteigenbitte.de/files/fonts/EinsteigenBitte-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "EinsteigenBitte";
+	font-weight: 600;
+	font-style: bold;
+	src:	
+			url("https://www.einsteigenbitte.de/files/fonts/EinsteigenBitte-Bold.ttf") format("truetype"), 
+			url("https://www.einsteigenbitte.de/files/fonts/EinsteigenBitte-Bold.woff") format("woff"),
+        	url("https://www.einsteigenbitte.de/files/fonts/EinsteigenBitte-Bold.woff2") format("woff2");
+}
+
+* {
+	font-family: "EinsteigenBitte", sans-serif;
+    font-weight: 300;
+}
+
+.mainMenu .boxMenu>li.active span {
+	font-weight: 600;
+}
+
+.messageSidebar .username span {
+	font-weight: 600;
+}
+
+.wbbBoardList .wbbDepth2.wbbCategory>header {
+	padding-left: 68px;
+}
+
+.messageSidebar .messageAuthorBackground {
+background-position: center;
+}
+
+
+.userProfileUserWithCoverPhoto  {
+	padding-top: 255px;
+}
+
+.userProfileUserWithCoverPhoto .userProfileCoverPhoto {
+height: 300px;
+}
+
+
+.badge.blue, a.badge.blue, .userTitleBadge {
+	padding-top: 5px;
+}
+
+.messageSidebar .badgeOnline {
+	padding-top: 5px;
+}
+
+.mainMenu .boxMenu>li>a>.boxMenuLinkOutstandingItems, .badge.badgeUpdate, a.badge.badgeUpdate, .contentHeader .contentTitle .badge, .contentHeader>h1 .badge, .boxHeadline .contentTitle .badge, .boxHeadline>h1 .badge {
+	margin-top: 5px;
+}
+
+.htmlContent p, .messageBody>.messageText p, .messageSignature>div p, .redactor-layer p, messageContent{
+	font-family: "EinsteigenBitte", sans-serif;
+    font-weight: 300;
+	font-size: 16px;
+}
+
+.wbbBoardList .wbbCollapsibleCategory h2>a {
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	padding-top: 5px;
+}
+
+
+button:not(.inputPrefix), input[type="button"]:not(.inputPrefix), input[type="reset"]:not(.inputPrefix), input[type="submit"]:not(.inputPrefix), .button:not(.inputPrefix), a.button:not(.inputPrefix) {
+	padding-top: 10px;
+}
+
+button:not(.inputPrefix), input[type="button"]:not(.inputPrefix), input[type="reset"]:not(.inputPrefix), input[type="submit"]:not(.inputPrefix), .button:not(.inputPrefix), a.button:not(.inputPrefix) {
+	padding-bottom: 8px;
+}
+
+.pagination>ul>li:not(.skip)>a, .pagination>ul>li:not(.skip)>span{
+	padding: 6px 8px 2px 8px;
+}
+
+.mainMenu .boxMenu>li>a>.boxMenuLinkOutstandingItems, .badge.badgeUpdate, a.badge.badgeUpdate, .contentHeader .contentTitle .badge, .contentHeader>h1 .badge, .boxHeadline .contentTitle .badge, .boxHeadline>h1 .badge {
+	padding: 5px 10px 2px 10px;
+	margin-top: -2px;
+}
+
+
+.contentHeader .contentTitle, .contentHeader>h1, .boxHeadline .contentTitle, .boxHeadline>h1 {
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.boxesSidebarLeft .boxTitle, .boxesSidebarRight .boxTitle, .section .sectionTitle, .contentTitle span, .wcfImageViewer>header h1, label, .interactiveDropdownHeader .interactiveDropdownTitle {
+	font-weight: 600;
+}
+
+.interactiveDropdownHeader {
+	padding: 10px 10px 5px 10px;
+}
+
+.contentHeader .contentTitle .badge {
+margin-top: 10px;
+}
+
+.contentHeader .contentHeaderNavigation>ul {
+margin-top: 10px;
+}
+
+.interactiveDropdownHeader .interactiveDropdownTitle {
+	font-size: 20px;
+}
+
+.userProfileUserWithCoverPhoto .userProfileUsername {
+	font-weight: 600;
+	font-size: 25px;
+}
+
+
+.userProfilePreviewAvatar .badgeOnline, .userProfileUser .contentHeaderIcon .badgeOnline {
+	padding: 4px 4px 0px 4px;
+}
+
+
+.articleImage .articleImageWrapper {
+max-height: none;
+}
+
+.articleImage .articleImageWrapper img {
+width: 100% !important;
+}
+
+/* Typograpy  */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: 'sazSans', sans-serif;
+    font-weight: 300;
+    font-kerning: normal;
+    vertical-align: top;
+}
+
+.page_wrap {
+    width: 100%;
+    margin: auto;
+}
+
+/* End Typorgrapy  */
+
+
+
+/* Header Wrap  */
+.header_wrap {
+    color: #fff;
+    min-height: 120px;
+	height: auto;
+	height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.header_left {
+    height: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.header_left img {
+    border: 5px solid #ffffff;
+    height: 80px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.sbahn-berlin .header_left img, .bus-berlin .header_left img, .faehre-berlin .header_left img {
+    border-radius: 100px;
+}
+
+.header_left_content h2 {
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.header_right {
+    margin-top: 10px;
+}
+
+.header_right_content h4 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.arrow_box_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.triangle-left,
+.triangle-right {
+    margin-top: -5px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+.triangle-right {
+    border-left: 15px solid #fff;
+}
+
+.triangle-left {
+    border-right: 15px solid #fff;
+}
+
+.arrow_box {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+/* End Header  */
+
+
+
+/* Section Wrap */
+.section_wrap {
+    padding: 25px 0px 35px 20px;
+}
+
+.box_text h4 {
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #000;
+	padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.box_text2 {
+    display: flex;
+    align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.box_text2 img {
+    height: 20px;
+    margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.section_content_wrap {
+    padding-left: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section_content_wrap::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.section_content_wrap::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 8px;
+    height: 100%;
+    z-index: -1;
+}
+
+.sbahn-berlin .header_wrap {
+    background: #088e4f;
+}
+
+.ubahn-berlin .header_wrap {
+    background: #115d91;
+}
+
+.tram-berlin .header_wrap {
+    background: #ec0016;
+}
+
+.bus-berlin .header_wrap {
+    background: #97276e;
+}
+
+.faehre-berlin .header_wrap {
+    background: #009ad7;
+}
+
+.section_container#sbahn-berlin .section_content_wrap::after {
+    background: #088e4f;
+}
+
+.section_container#ubahn-berlin .section_content_wrap::after {
+    background: #115d91;
+}
+
+.section_container#tram-berlin .section_content_wrap::after {
+    background: #ec0016;
+}
+
+.section_container#bus-berlin .section_content_wrap::after {
+    background: #97276e;
+}
+
+.section_container#faehre-berlin .section_content_wrap::after {
+    background: #009ad7;
+}
+
+.section_container#sbahn-berlin .section_content_wrap::before {
+    border: 2px solid #088e4f;
+}
+
+.section_container#ubahn-berlin .section_content_wrap::before {
+    border: 2px solid #115d91;
+}
+
+.section_container#tram-berlin .section_content_wrap::before {
+    border: 2px solid #ec0016;
+}
+
+.section_container#bus-berlin .section_content_wrap::before {
+    border: 2px solid #97276e;
+}
+
+.section_container#faehre-berlin .section_content_wrap::before {
+    border: 2px solid #009ad7;
+}
+
+
+dl:not(.plain)>dt:not(:empty), .tabMenu>ul>li.active>a, .menu>ul>li.active>a {
+	font-weight: 600;
+}
+
+.last::after {
+    display: none;
+}
+.grey::before{
+    border: 2px solid #7D7E7F;
+}
+.grey_sq::after{
+    background: #7D7E7F;
+}
+/* End  */
+
+
+
+
+/* Footer Wrap  */
+.footer_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0px;
+    padding-bottom: 15px;
+}
+
+.footer_wrap p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.footer_wrap p strong {
+    font-weight: 700;
+}
+
+/* End Footer  */
+
+/* Triangle UP  */
+.trangle_round_none::before{
+    display: none;
+}
+.triangle_up_wrap{
+    position: absolute;
+    left: -1px;
+    top: 0;
+}
+.trangle_up {
+    width: 0;
+    height: 0;
+    position: relative;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 24px solid;
+}
+
+.trangle_up:after{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 16px solid white;
+    left: -7px;
+    top: 5px;
+}
+.trangle_down{
+    transform: rotate(-180deg);
+}
+
+
+
+#sbahn-berlin .trangle_up {
+    border-bottom-color: #115d91;
+}
+
+#ubahn-berlin .trangle_up {
+    border-bottom-color: #115d91;
+}
+
+#tram-berlin .trangle_up {
+    border-bottom-color: #ec0016;
+}
+
+#bus-berlin .trangle_up {
+    border-bottom-color: #97276e;
+}
+
+#faehre-berlin .trangle_up {
+    border-bottom-color: #009ad7;
+}
+
+
+
+.contentHeader+.section, .contentHeader+form, .contentHeader+.sectionContainer, .content>.section, .content>form, .sectionContainer {
+	border-radius: 15px;
+	border: none;
+	box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+
+.boxesSidebarLeft .box:not(.boxBorderless), .boxesSidebarRight .box:not(.boxBorderless) {
+	border-radius: 15px;
+	background: #eeeeee;
+}
+
+.messageSidebar .messageAuthorBackground, .userProfileUserWithCoverPhoto .userProfileCoverPhoto {
+	border-radius: 15px 15px 0px 0px;
+}
+
+
+.messageSidebar {
+	border-radius: 0px 0px 15px 15px;
+	background: #eeeeee;
+}
+
+
+.containerHeadline>h3>.badge, .mainMenu .boxMenu>li>a>.boxMenuLinkOutstandingItems, .badge.badgeUpdate, a.badge.badgeUpdate, .contentHeader .contentTitle .badge, .contentHeader>h1 .badge, .boxHeadline .contentTitle .badge, .boxHeadline>h1 .badge, .sidebar .boxTitle .badge {
+	top: 0px;
+	padding: 3px 6px 0px 6px;
+}
+
+
+
+
+
+.startseite h1 {
+    font-size: 35px;
+    font-weight: 600;
+	font-family: "EinsteigenBitte", sans-serif;
+    font-weight: 600;
+}
+
+.startseite h2 {
+    font-size: 22px;
+    font-weight: 600;
+	font-family: "EinsteigenBitte", sans-serif;
+}
+
+.startseite h3 {
+    font-size: 20px;
+    font-weight: 600;
+	font-family: "EinsteigenBitte", sans-serif;
+}
+
+.startseite p {
+    font-size: 16px;
+    font-weight: 300;
+	font-family: "EinsteigenBitte", sans-serif;
+}
+
+.startseite a {
+    text-decoration: none;
+	font-family: "EinsteigenBitte", sans-serif;
+    font-weight: 300;
+}
+/*
+.startseite {
+	width: calc(100%-20px);
+}
+
+.startseite .grosser-beitrag {
+    width: 100%;
+    margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.startseite .grosser-beitrag section {
+    width: calc(50% - 10px);
+    box-shadow: 0 2px 20px rgba(0,0,0,.2);
+    transition: 0.4s;
+    border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+    margin-top: 25px;
+}
+
+.startseite .grosser-beitrag section:hover {
+    width: calc(50% - 10px);
+    box-shadow: 0 2px 20px rgba(0,0,0,.4);
+    transition: 0.4s;
+    border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+
+.startseite .grosser-beitrag section:first-child:hover {
+	width: calc(50% - 10px);
+    box-shadow: 0 2px 20px rgba(0,0,0,.4);
+    transition: 0.4s;
+    border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+*/
+.startseite .grosser-beitrag section#own, .startseite .grosser-beitrag section#own:first-child, .startseite .grosser-beitrag section#own:hover, .startseite .grosser-beitrag section#own:first-child:hover {
+	width: 100%;
+}
+
+.startseite .grosser-beitrag section#line a img {
+	padding: 30px 150px;
+}
+
+.startseite .grosser-beitrag section a img,.startseite .grosser-beitrag-linien section a img {
+    border-radius: 10px 10px 0px 0px;
+-moz-border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.startseite .grosser-beitrag section img, .startseite .grosser-beitrag-linien section img {
+    border-radius: 10px 10px 0px 0px;
+-moz-border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.startseite .grosser-beitrag section a .beschreibung, .startseite .grosser-beitrag-linien section a .beschreibung {
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px 10px 0px 0px;
+-moz-border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
+    margin-top: -4px;
+    height: auto;
+    padding: 30px 30px 50px 30px;
+    z-index: 99;
+}
+
+.startseite .grosser-beitrag section a .beschreibung h2, .startseite .grosser-beitrag-linien section a .beschreibung h2 {
+    margin-bottom: 4px;
+}
+
+.startseite .grosser-beitrag section a .beschreibung p, .startseite .grosser-beitrag-linien section a .beschreibung p {
+    line-height: 18px;
+}
+
+.startseite .grosser-beitrag section .beschreibung, .startseite .grosser-beitrag-linien section .beschreibung {
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px 10px 0px 0px;
+-moz-border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
+    margin-top: -4px;
+    height: auto;
+    padding: 30px 30px 30px 30px;
+    z-index: 99;
+}
+
+.startseite .grosser-beitrag section .beschreibung h2, .startseite .grosser-beitrag-linien section .beschreibung h2 {
+    margin-bottom: 4px;
+}
+
+.startseite .grosser-beitrag section .beschreibung p, .startseite .grosser-beitrag-linien section .beschreibung p {
+    line-height: 18px;
+}
+
+.startseite .grosser-beitrag-linien section .beschreibung {
+	display: flex;
+	flex-direction: column;
+}
+
+.startseite .grosser-beitrag-linien section .beschreibung h2 {
+	margin-left: 15px;
+	float: left;
+}
+
+.startseite .grosser-beitrag-linien section .beschreibung img {
+	height: 30px;
+	float: left;
+}
+
+.startseite button#arrow {
+    float: right;
+    background: #003A5A;
+    width: 35px;
+    height: 35px;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px 0px 10px 0px;
+-moz-border-radius: 10px 0px 10px 0px;
+-webkit-border-radius: 10px 0px 10px 0px;
+    margin: 15px -30px 0px 0px;
+    cursor: pointer;
+    font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.startseite .beitrag img {
+    width: 100%;
+    border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+    margin-bottom: 25px;
+    
+}
+
+.startseite .beitrag .header {
+    margin-bottom: 25px;
+}
+
+.startseite .beitrag p {
+    line-height: 20px;
+    text-align: justify;
+}
+
+
+
+
+@media (max-width: 1200px) {
+	
+	.header_wrap {
+    color: #fff;
+    min-height: 80px;
+	height: auto;
+    display: flex;
+    align-items: center;
+	justify-content: flex-start;
+}
+	
+	.header_left {
+	width: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+	
+
+.header_left img {
+    border: 2px solid #ffffff;
+    height: 50px;
+    width: auto;
+	margin-left: 0px;
+	padding-left: 0px;
+    vertical-align: middle;
+}
+    .header_left {
+        width: auto;
+        height: 65px;
+    }
+    .header_left_content h2 {
+        font-size: 45px;
+    }
+	
+	.header_right {
+    margin-top: 5px;
+}
+	
+	
+.contentHeader .contentTitle .badge {
+margin-top: -5px;
+}
+	
+.header_right_content h4 {
+		margin-left: 0px;
+    font-size: 20px;
+    line-height: 22px;
+	padding-right: 15px;
+}
+	
+	    .triangle-left,
+.triangle-right {
+    margin-top: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.triangle-right {
+    border-left: 10px solid #fff;
+}
+
+.triangle-left {
+    border-right: 10px solid #fff;
+}
+	.arrow_box {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.contentHeader .contentTitle, .contentHeader>h1, .boxHeadline .contentTitle, .boxHeadline>h1 {
+	font-weight: 600;
+	font-size: 25px;
+}
+	
+.userProfileUserWithCoverPhoto  {
+	padding-top: 125px;
+}
+	
+	.userProfilePreviewAvatar .badgeOnline, .userProfileUser .contentHeaderIcon .badgeOnline {
+	padding: 0px;
+	}
+	
+.userProfileUserWithCoverPhoto .userProfileCoverPhoto {
+height: 150px;
+}
+	
+	
+	.startseite .grosser-beitrag section, .startseite .grosser-beitrag section:first-child {
+    width: 100%;
+    box-shadow: 0 2px 20px rgba(0,0,0,.2);
+    transition: 0.4s;
+    border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+    margin-top: 25px;
+}
+
+
+.startseite .grosser-beitrag section:hover, .startseite .grosser-beitrag section:first-child:hover {
+    width: 100%;
+    box-shadow: 0 2px 20px rgba(0,0,0,.4);
+    transition: 0.4s;
+    border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+	
+	.startseite .grosser-beitrag section a .beschreibung {
+        padding: 20px 20px 40px 20px;
+    }
+	
+	.startseite .grosser-beitrag section .beschreibung {
+        padding: 20px 20px 40px 20px;
+    }
+    
+    .startseite button#arrow {
+        float: right;
+        background: #003a5a;
+        width: 35px;
+        height: 35px;
+        color: #ffffff;
+        text-decoration: none;
+        border: none;
+        border-radius: 10px 0px 10px 0px;
+    -moz-border-radius: 10px 0px 10px 0px;
+    -webkit-border-radius: 10px 0px 10px 0px;
+        margin: 10px -20px 0px 0px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 60vh;
+    background: light-gray;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+
+.container .box {
+    background: light-gray;
+    /* padding: 20px; */
+    display: grid;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+	border-radius:10px;
+}
+
+.container .box:hover {
+    background: #e91e63;
+	border-radius:10px;	
+}
+
+.container .box img {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.container .box:nth-child(1) {
+    /* grid-column: span 2; */
+    grid-column: 1 / span 2;;
+    grid-row: span 1;
+}
+.container .box:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.container .box:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.container .box:nth-child(2) {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+@media (max-width: 991px)
+{
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+    }
+    .container .box {
+        grid-column: unset !important;
+    grid-row: unset !important;
+    }
+}
